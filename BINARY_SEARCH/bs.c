@@ -43,4 +43,5 @@ int main ()
     bs(a, n, r , l, k );
     printf("The program is done.");
     return 0;
+    
 }
