@@ -1,6 +1,7 @@
 #include <stdio.h>
-void bs(int*a , int n , int r , int l , int k)
+void bs(int[] , int n , int r , int l , int k)
 {
+    while(l <= r){
     int mid = (l+r)/2;
     for (int i = 0 ; i < n; i++)
     {
@@ -18,6 +19,7 @@ void bs(int*a , int n , int r , int l , int k)
         }
 
     }
+}
 
 }
 int main ()
