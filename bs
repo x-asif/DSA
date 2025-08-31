@@ -1,0 +1,3 @@
+binary_search code with return and recursive function.
+We yesterday we completed the binary search code without using the return.
+binary search is a sequential prgramming in which we use mid term and index of the array or list.
