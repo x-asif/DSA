@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main (){
-    int a[12][34], b[45][89], sum[45][88], i , j , r, c;
+    int a[12][34], b[45][89], multi[45][88] , i , j , r, c;
     printf("Enter the row and column of the matrices:\n");
     scanf("%d%d", &r, &c);
     printf("Enter the values of the matrix A\n");
@@ -21,13 +21,15 @@ int main (){
     for(i=0; i< r; i++)
     {
         for(j=0; j<c; j++){
-           sum[i][j] = a[i][j]*b[i][j] + a[i][j]*b[j][i];
+              for(int k = 0 ; k < c ; k ++){
+                multi[i][j] += a[i][k]*b[k][j];     
+            }
         }
     }
     for(i=0; i < r; i++)
     {
         for(j=0; j<c; j++){
-            printf("%d\t", sum[i][j]);
+            printf("%d\t", multi[i][j]);
         }
         printf("\n");
     }
